@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balóchiay Áb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <nav class="top-nav" id="topNav" aria-label="Learning categories"></nav>
+      <section class="workspace">
+        <aside class="left-panel">
+          <div class="left-heading">
+            <h1 id="pageTitle">Balóchiay Áb</h1>
+            <button
+              class="sound-button small-sound"
+              id="pageAudioBtn"
+              aria-label="Play category audio"
+              title="Play category audio"
+            >
+              🎙️
+            </button>
+          </div>
+          <div class="letter-grid-wrap">
+            <div class="letter-grid" id="letterGrid"></div>
+          </div>
+        </aside>
+
+        <section class="right-panel" aria-live="polite">
+          <div class="detail-top">
+            <div class="letter-heading">
+              <span class="big-letter" id="bigLetter">A</span>
+              <span class="main-example" id="mainExample">Anár</span>
+            </div>
+            <button
+              class="sound-button main-sound"
+              id="letterAudioBtn"
+              aria-label="Play letter sound"
+              title="Play letter sound"
+            >
+              🎙️
+            </button>
+            <button class="next-button" id="nextBtn">
+              Next <span aria-hidden="true">▶</span>
+            </button>
+            <span class="example-number" id="exampleNumber">Anár</span>
+          </div>
+
+          <div class="image-section">
+            <article class="image-card" id="imageCard1">
+              <img id="picture1" alt="" />
+              <div class="image-fallback" id="fallback1">Anár</div>
+              <p id="word1">Anár</p>
+            </article>
+            <article class="image-card second-card" id="imageCard2">
+              <img id="picture2" alt="" />
+              <div class="image-fallback folder-fallback" id="fallback2">
+                📁
+              </div>
+              <p id="word2">Aap</p>
+            </article>
+          </div>
+
+          <div class="detail-bottom">
+            <strong class="category-label">Category:</strong>
+            <div class="category-list" id="categoryList"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
